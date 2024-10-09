@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(16, 16, 39);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(16, 16, 39);
+    color: white;
+    padding: 25px 0;
+    z-index: 1000; /* Ensures the navbar is always on top */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    color: blue;
+}
+
+.home{
+    background-image: url("img/freestocks-BStW5kYXw4E-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 450px;
+    padding: 20px;
+    
+}
+
+
+.tcolor{
+    color: blue;
+}
+
+.text{
+    color: white;
+    margin-top: 14%;
+    margin-left: 20px;
+}
+
+.text1{
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+}
+
+.containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Optional: Gap between columns */
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.text {
+    grid-column: 1; /* Place text in the first column */
+}
+
+.image {
+    grid-column: 2; /* Place image in the second column */
+}
+
+.image img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+}
+
+.sec-img{
+    padding-right: 20px;
+}
+
+.services{
+    /* border-top: 2px solid white;
+    border-bottom: 2px solid white; */
+    margin-top: -20px;
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+.section-text{
+    color: white;
+    margin-left: 40px;
+}
+
+.service-bar{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-left: 30px;
+}
+
+.work{
+    /* border-bottom: 2px solid white; */
+    margin-top: -158px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.work-bar{
+    width: 98%;
+    display: flex;
+}
+
+.bars{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 33%;
+}
+
+.bar{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 33%;
+    height: 200px;
+}
+
+.bar1{
+    background-image: url("img/ag.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 70px;
+}
+.bar2{
+    background-image: ("img/food.jpg" );
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 70px;
+}
+.bar3{
+    background-image: url("img/gad.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 70px;
+}
+
+.deco{
+    text-decoration: none;
+    color: rgb(16, 16, 39);
+}
+
+.bar:hover{
+    box-shadow: -6px 6px 0 0 blue;
+    transition: all linear 0.2s;
+}
+
+.contact{
+    margin-top: -158px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.con{
+    text-align: center;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#contactForm label {
+    margin-top: 1em;
+}
+
+#contactForm input, #contactForm textarea {
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+#contactForm button {
+    margin-top: 1em;
+    padding: 0.5em;
+    background: blue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background: transparent;
+}
+
+.foot {
+    width: 100%;
+    background-color: rgb(16, 16, 39);
+    color: white;
+    padding: 5px 0;
+    border-top: 2px solid white;
+    margin-top: -50px;
+}
+
+.copy {
+    margin: 20px;
+    margin-left: 30px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-left: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.footer-links a:hover {
+    color: blue;
+}
